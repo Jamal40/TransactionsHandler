@@ -1,0 +1,40 @@
+<div class="container">
+  <form [formGroup]="form">
+    <mat-form-field>
+      <mat-label>Processing Code</mat-label>
+      <input matInput type="text" formControlName="processingCode" />
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>System Trace Number</mat-label>
+      <input matInput type="text" formControlName="systemTraceNr" />
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Function Code</mat-label>
+      <input matInput type="text" formControlName="functionCode" />
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Card Number</mat-label>
+      <input matInput type="text" formControlName="cardNo" />
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Card Holder</mat-label>
+      <input matInput type="text" formControlName="cardHolder" />
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Amount</mat-label>
+      <input matInput type="text" formControlName="amountTrxn" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Currency Code</mat-label>
+      <input matInput type="text" formControlName="currencyCode" />
+    </mat-form-field>
+  
+    <button (click)="handleSubmit($event)" mat-raised-button color="primary">Submit</button>
+  </form>
+</div>

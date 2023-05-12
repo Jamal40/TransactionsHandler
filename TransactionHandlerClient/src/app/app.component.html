@@ -1,0 +1,27 @@
+<div class="container">
+  <a
+    *ngIf="authenticationService.isAuthenticated$ | async"
+    routerLink="/transactions/submit"
+    mat-button
+    color="accent"
+  >
+    Go to Your Transactioon Form
+  </a>
+  <a
+    *ngIf="!(authenticationService.isAuthenticated$ | async)"
+    routerLink="/authentication/login"
+    mat-button
+    color="accent"
+  >
+    Login
+  </a>
+  <a
+    *ngIf="!(authenticationService.isAuthenticated$ | async)"
+    routerLink="/authentication/register"
+    mat-button
+    color="accent"
+  >
+    Register
+  </a>
+</div>
+<router-outlet></router-outlet>
